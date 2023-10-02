@@ -59,6 +59,8 @@
 // @match        *://www.howbabycomic.com/*
 // @match        *://www.thethiefoftales.com/*
 // @match        *://www.phantomarine.com/*
+// @match        *://www.theglassscientists.com/*
+// @match        *://theglassscientists.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -142,8 +144,9 @@
             (currDomain.endsWith('sleeplessdomain.com'))
             || (currDomain.endsWith('wychwoodcomic.com'))
             || (currDomain.endsWith('spinnyverse.com'))
+            || (currDomain.endsWith('theglassscientists.com'))
         ) {
-            // 3
+            // 4
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody',
