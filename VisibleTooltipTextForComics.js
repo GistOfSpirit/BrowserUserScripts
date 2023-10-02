@@ -55,6 +55,10 @@
 // @match        *://www.grrlpowercomic.com/*
 // @match        *://www.sisterclaire.com/*
 // @match        *://sisterclaire.com/*
+// @match        *://howbabycomic.com/*
+// @match        *://www.howbabycomic.com/*
+// @match        *://www.thethiefoftales.com/*
+// @match        *://www.phantomarine.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -101,8 +105,10 @@
             || (currDomain.endsWith('superredundant.com'))
             || (currDomain.endsWith('thespecialistscomic.com'))
             || (currDomain.endsWith('grrlpowercomic.com'))
+            || (currDomain.endsWith('howbabycomic.com'))
+            || (currDomain.endsWith('thethiefoftales.com'))
         ) {
-            // 5
+            // 7
             return {
                 comic: '#comic img',
                 body: '#comic'
@@ -151,7 +157,7 @@
                 ttCss: 'color: black'
             };
         } else {
-            // 21
+            // 22
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody'
