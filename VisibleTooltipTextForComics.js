@@ -53,6 +53,8 @@
 // @match        *://www.superredundant.com/*
 // @match        *://thespecialistscomic.com/*
 // @match        *://www.grrlpowercomic.com/*
+// @match        *://www.sisterclaire.com/*
+// @match        *://sisterclaire.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -76,16 +78,19 @@
         const currDomain = `${window.location.hostname}`;
 
         if (currDomain.endsWith('dumbingofage.com')) {
+            // 1
             return {
                 comic: '#comic-1 img',
                 body: '#comic-1'
             };
         } else if (currDomain.endsWith('comicaurora.com')) {
+            // 1
             return {
                 comic: '#mgsisk_webcomic_collection_widget_webcomicmedia-5 img',
                 body: '#mgsisk_webcomic_collection_widget_webcomicmedia-5'
             };
         } else if (currDomain.endsWith('itneverrainscomic.com')) {
+            // 1
             return {
                 comic: 'table div span img',
                 bodyFunc: (comic) => comic.parentNode.parentNode
@@ -97,27 +102,32 @@
             || (currDomain.endsWith('thespecialistscomic.com'))
             || (currDomain.endsWith('grrlpowercomic.com'))
         ) {
+            // 5
             return {
                 comic: '#comic img',
                 body: '#comic'
             };
         } else if (currDomain.endsWith('agirlandherfed.com')) {
+            // 1
             return {
                 comic: '#comic-image img',
                 body: '#comic-box'
             }
         } else if (currDomain.endsWith('saffroncomic.com')) {
+            // 1
             return {
                 comic: '#comic picture',
                 body: '#comic'
             };
         } else if (currDomain.endsWith('sombulus.com')) {
+            // 1
             return {
                 comic: '#page img',
                 body: '#page',
                 afterFunc: (comic) => comic
             };
         } else if (currDomain.endsWith('giftscomic.com')) {
+            // 1
             return {
                 comic: '.comic_nav img',
                 body: '.comic_nav'
@@ -127,18 +137,21 @@
             || (currDomain.endsWith('wychwoodcomic.com'))
             || (currDomain.endsWith('spinnyverse.com'))
         ) {
+            // 3
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody',
                 ttCss: 'color: white'
             };
         } else if (currDomain.endsWith('monster-pulse.com')) {
+            // 1
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody',
                 ttCss: 'color: black'
             };
         } else {
+            // 21
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody'
