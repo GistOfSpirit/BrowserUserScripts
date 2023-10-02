@@ -51,6 +51,7 @@
 // @match        *://www.spinnyverse.com/*
 // @match        *://superredundant.com/*
 // @match        *://www.superredundant.com/*
+// @match        *://thespecialistscomic.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -92,6 +93,7 @@
             (currDomain.endsWith('xkcd.com'))
             || (currDomain.endsWith('yokokasquest.com'))
             || (currDomain.endsWith('superredundant.com'))
+            || (currDomain.endsWith('thespecialistscomic.com'))
         ) {
             return {
                 comic: '#comic img',
