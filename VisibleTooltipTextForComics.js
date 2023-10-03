@@ -33,6 +33,7 @@
 // @match        *://forgottenordercomic.com/*
 // @match        *://www.cassiopeiaquinn.com/*
 // @match        *://cassiopeiaquinn.com/*
+// @match        *://www.aghoststorycomic.com/*
 // @match        *://www.monster-pulse.com/*
 // @match        *://www.wychwoodcomic.com/*
 // @match        *://www.godslavecomic.com/*
@@ -162,7 +163,7 @@
                 ttCss: 'color: black'
             };
         } else {
-            // 22
+            // 23
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody'
