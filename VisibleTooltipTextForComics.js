@@ -61,6 +61,7 @@
 // @match        *://www.phantomarine.com/*
 // @match        *://www.theglassscientists.com/*
 // @match        *://theglassscientists.com/*
+// @match        *://jeaniebottle.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -109,8 +110,9 @@
             || (currDomain.endsWith('grrlpowercomic.com'))
             || (currDomain.endsWith('howbabycomic.com'))
             || (currDomain.endsWith('thethiefoftales.com'))
+            || (currDomain.endsWith('jeaniebottle.com'))
         ) {
-            // 7
+            // 8
             return {
                 comic: '#comic img',
                 body: '#comic'
