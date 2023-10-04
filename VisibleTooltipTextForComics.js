@@ -168,7 +168,7 @@
                 ttCss: 'color: black'
             };
         } else {
-            // 23
+            // 24
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody'
