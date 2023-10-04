@@ -63,6 +63,10 @@
 // @match        *://www.theglassscientists.com/*
 // @match        *://theglassscientists.com/*
 // @match        *://jeaniebottle.com/*
+// @match        *://www.niinaeveliina.com/numb/*
+// @match        *://niinaeveliina.com/numb/*
+// @match        *://www.fairmeadowcomic.com/*
+// @match        *://fairmeadowcomic.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -112,8 +116,9 @@
             || (currDomain.endsWith('howbabycomic.com'))
             || (currDomain.endsWith('thethiefoftales.com'))
             || (currDomain.endsWith('jeaniebottle.com'))
+            || (currDomain.endsWith('niinaeveliina.com'))
         ) {
-            // 8
+            // 9
             return {
                 comic: '#comic img',
                 body: '#comic'
