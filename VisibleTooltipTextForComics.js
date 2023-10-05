@@ -70,6 +70,9 @@
 // @match        *://www.howtobeawerewolf.com/*
 // @match        *://motherlovercomic.com/*
 // @match        *://www.motherlovercomic.com/*
+// @match        *://www.tryinghuman.com/*
+// @match        *://heirsoftheveil.com/*
+// @match        *://www.heirsoftheveil.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -121,8 +124,9 @@
             || (currDomain.endsWith('jeaniebottle.com'))
             || (currDomain.endsWith('niinaeveliina.com'))
             || (currDomain.endsWith('motherlovercomic.com'))
+            || (currDomain.endsWith('heirsoftheveil.com'))
         ) {
-            // 10
+            // 11
             return {
                 comic: '#comic img',
                 body: '#comic'
@@ -172,7 +176,7 @@
                 ttCss: 'color: black'
             };
         } else {
-            // 25
+            // 26
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody'
