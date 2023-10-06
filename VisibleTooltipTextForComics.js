@@ -75,6 +75,7 @@
 // @match        *://www.heirsoftheveil.com/*
 // @match        *://www.endcomic.com/*
 // @match        *://www.automansdaughter.com/*
+// @match        *://ninegatescomic.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -128,8 +129,9 @@
             || (currDomain.endsWith('motherlovercomic.com'))
             || (currDomain.endsWith('heirsoftheveil.com'))
             || (currDomain.endsWith('endcomic.com'))
+            || (currDomain.endsWith('ninegatescomic.com'))
         ) {
-            // 12
+            // 13
             return {
                 comic: '#comic img',
                 body: '#comic'
