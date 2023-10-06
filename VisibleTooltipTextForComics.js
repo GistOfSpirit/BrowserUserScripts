@@ -74,6 +74,7 @@
 // @match        *://heirsoftheveil.com/*
 // @match        *://www.heirsoftheveil.com/*
 // @match        *://www.endcomic.com/*
+// @match        *://www.automansdaughter.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -178,7 +179,7 @@
                 ttCss: 'color: black'
             };
         } else {
-            // 26
+            // 27
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody'
