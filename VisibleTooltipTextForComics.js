@@ -76,6 +76,7 @@
 // @match        *://www.endcomic.com/*
 // @match        *://www.automansdaughter.com/*
 // @match        *://ninegatescomic.com/*
+// @match        *://www.awkwardzombie.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -186,7 +187,7 @@
                 ttCss: 'color: black'
             };
         } else {
-            // 27
+            // 28
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody'
