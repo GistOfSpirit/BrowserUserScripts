@@ -34,6 +34,7 @@
 // @match        *://www.cassiopeiaquinn.com/*
 // @match        *://cassiopeiaquinn.com/*
 // @match        *://www.aghoststorycomic.com/*
+// @match        *://www.wildelifecomic.com/*
 // @match        *://www.monster-pulse.com/*
 // @match        *://www.wychwoodcomic.com/*
 // @match        *://www.godslavecomic.com/*
@@ -77,6 +78,7 @@
 // @match        *://www.automansdaughter.com/*
 // @match        *://ninegatescomic.com/*
 // @match        *://www.awkwardzombie.com/*
+// @match        *://www.nighheavenandhell.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -186,8 +188,15 @@
                 body: '#cc-comicbody',
                 ttCss: 'color: black'
             };
+        } else if (compareDomain('wildelifecomic.com')) {
+            // 1
+            return {
+                comic: '#cc-comic',
+                body: '#cc-comicbody',
+                ttCss: 'background-color: white'
+            };
         } else {
-            // 28
+            // 29
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody'
