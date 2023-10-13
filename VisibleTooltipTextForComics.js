@@ -79,6 +79,7 @@
 // @match        *://ninegatescomic.com/*
 // @match        *://www.awkwardzombie.com/*
 // @match        *://www.nighheavenandhell.com/*
+// @match        *://twokinds.keenspot.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -168,6 +169,12 @@
             return {
                 comic: '.comic_nav img',
                 body: '.comic_nav'
+            };
+        } else if (compareDomain('twokinds.keenspot.com')) {
+            // 1
+            return {
+                comic: '.comic img',
+                body: '.comic'
             };
         } else if (
             (compareDomain('sleeplessdomain.com'))
