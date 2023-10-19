@@ -80,6 +80,8 @@
 // @match        *://www.awkwardzombie.com/*
 // @match        *://www.nighheavenandhell.com/*
 // @match        *://twokinds.keenspot.com/*
+// @match        *://megatokyo.com/*
+// @match        *://www.megatokyo.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -139,8 +141,9 @@
             || (compareDomain('heirsoftheveil.com'))
             || (compareDomain('endcomic.com'))
             || (compareDomain('ninegatescomic.com'))
+            || (compareDomain('megatokyo.com'))
         ) {
-            // 13
+            // 14
             return {
                 comic: '#comic img',
                 body: '#comic'
