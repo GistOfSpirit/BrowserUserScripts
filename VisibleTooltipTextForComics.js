@@ -82,6 +82,8 @@
 // @match        *://twokinds.keenspot.com/*
 // @match        *://megatokyo.com/*
 // @match        *://www.megatokyo.com/*
+// @match        *://www.ozziethevampire.com/*
+// @match        *://ozziethevampire.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -206,7 +208,7 @@
                 ttCss: 'background-color: white'
             };
         } else {
-            // 29
+            // 30
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody'
