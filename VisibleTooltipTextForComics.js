@@ -35,6 +35,8 @@
 // @match        *://cassiopeiaquinn.com/*
 // @match        *://www.aghoststorycomic.com/*
 // @match        *://www.wildelifecomic.com/*
+// @match        *://earth2068.cfw.me/*
+// @match        *://www.earth2068.cfw.me/*
 // @match        *://www.monster-pulse.com/*
 // @match        *://www.wychwoodcomic.com/*
 // @match        *://www.godslavecomic.com/*
@@ -180,6 +182,13 @@
             return {
                 comic: '.comic img',
                 body: '.comic'
+            };
+        } else if (compareDomain('earth2068.cfw.me')) {
+            // 1
+            return {
+                comic: '#comicimage',
+                body: '#comicpage2',
+                after: 'div.comicimage'
             };
         } else if (
             (compareDomain('sleeplessdomain.com'))
