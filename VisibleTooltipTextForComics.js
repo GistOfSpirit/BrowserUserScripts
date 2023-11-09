@@ -86,6 +86,8 @@
 // @match        *://www.megatokyo.com/*
 // @match        *://www.ozziethevampire.com/*
 // @match        *://ozziethevampire.com/*
+// @match        *://saintsquarter.com/*
+// @match        *://www.saintsquarter.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -146,8 +148,9 @@
             || (compareDomain('endcomic.com'))
             || (compareDomain('ninegatescomic.com'))
             || (compareDomain('megatokyo.com'))
+            || (compareDomain('saintsquarter.com'))
         ) {
-            // 14
+            // 15
             return {
                 comic: '#comic img',
                 body: '#comic'
