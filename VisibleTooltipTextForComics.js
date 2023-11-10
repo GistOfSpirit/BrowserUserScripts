@@ -37,6 +37,8 @@
 // @match        *://www.wildelifecomic.com/*
 // @match        *://earth2068.cfw.me/*
 // @match        *://www.earth2068.cfw.me/*
+// @match        *://www.xpboostcomic.com/*
+// @match        *://xpboostcomic.com/*
 // @match        *://www.monster-pulse.com/*
 // @match        *://www.wychwoodcomic.com/*
 // @match        *://www.godslavecomic.com/*
@@ -149,8 +151,9 @@
             || (compareDomain('ninegatescomic.com'))
             || (compareDomain('megatokyo.com'))
             || (compareDomain('saintsquarter.com'))
+            || (compareDomain('xpboostcomic.com'))
         ) {
-            // 15
+            // 16
             return {
                 comic: '#comic img',
                 body: '#comic'
