@@ -39,6 +39,7 @@
 // @match        *://www.earth2068.cfw.me/*
 // @match        *://www.xpboostcomic.com/*
 // @match        *://xpboostcomic.com/*
+// @match        *://johnnywander.com/*
 // @match        *://www.monster-pulse.com/*
 // @match        *://www.wychwoodcomic.com/*
 // @match        *://www.godslavecomic.com/*
@@ -223,7 +224,7 @@
                 ttCss: 'background-color: white'
             };
         } else {
-            // 30
+            // 31
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody'
