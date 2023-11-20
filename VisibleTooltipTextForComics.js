@@ -40,6 +40,7 @@
 // @match        *://www.xpboostcomic.com/*
 // @match        *://xpboostcomic.com/*
 // @match        *://johnnywander.com/*
+// @match        *://www.vaingloriouscomic.com/*
 // @match        *://www.monster-pulse.com/*
 // @match        *://www.wychwoodcomic.com/*
 // @match        *://www.godslavecomic.com/*
@@ -209,8 +210,11 @@
                 body: '#cc-comicbody',
                 ttCss: 'color: white'
             };
-        } else if (compareDomain('monster-pulse.com')) {
-            // 1
+        } else if (
+            compareDomain('monster-pulse.com')
+            || compareDomain('vaingloriouscomic.com')
+        ) {
+            // 2
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody',
