@@ -157,7 +157,7 @@
             || (compareDomain('saintsquarter.com'))
             || (compareDomain('xpboostcomic.com'))
         ) {
-            // 16
+            // 17
             return {
                 comic: '#comic img',
                 body: '#comic'
