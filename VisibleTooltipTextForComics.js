@@ -92,6 +92,7 @@
 // @match        *://ozziethevampire.com/*
 // @match        *://saintsquarter.com/*
 // @match        *://www.saintsquarter.com/*
+// @match        *://melvin.jeaniebottle.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -146,6 +147,7 @@
             || (compareDomain('howbabycomic.com'))
             || (compareDomain('thethiefoftales.com'))
             || (compareDomain('jeaniebottle.com'))
+            || (compareDomain('melvin.jeaniebottle.com'))
             || (compareDomain('niinaeveliina.com'))
             || (compareDomain('motherlovercomic.com'))
             || (compareDomain('heirsoftheveil.com'))
