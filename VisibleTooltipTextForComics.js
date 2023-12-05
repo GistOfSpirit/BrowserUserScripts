@@ -93,6 +93,7 @@
 // @match        *://saintsquarter.com/*
 // @match        *://www.saintsquarter.com/*
 // @match        *://melvin.jeaniebottle.com/*
+// @match        *://nortverse.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -116,7 +117,7 @@
         const currDomain = `${window.location.hostname}`;
 
         return currDomain === domName
-            || currDomain === `www.${domName}`;
+        || currDomain === `www.${domName}`;
     }
 
     function getComicData() {
@@ -212,6 +213,12 @@
                 body: '#cc-comicbody',
                 ttCss: 'color: white'
             };
+        } else if(compareDomain('nortverse.com')) {
+            // 1
+            return {
+                comic: '#spliced-comic a',
+                body: '#spliced-comic a'
+            }
         } else if (
             compareDomain('monster-pulse.com')
             || compareDomain('vaingloriouscomic.com')
