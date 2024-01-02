@@ -94,6 +94,8 @@
 // @match        *://www.saintsquarter.com/*
 // @match        *://melvin.jeaniebottle.com/*
 // @match        *://nortverse.com/*
+// @match        *://reallifecomics.com/*
+// @match        *://www.reallifecomics.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -157,8 +159,9 @@
             || (compareDomain('megatokyo.com'))
             || (compareDomain('saintsquarter.com'))
             || (compareDomain('xpboostcomic.com'))
+            || (compareDomain('reallifecomics.com'))
         ) {
-            // 17
+            // 18
             return {
                 comic: '#comic img',
                 body: '#comic'
