@@ -209,8 +209,10 @@
             || (compareDomain('wychwoodcomic.com'))
             || (compareDomain('spinnyverse.com'))
             || (compareDomain('theglassscientists.com'))
+            || (compareDomain('namesakecomic.com'))
+            || (compareDomain('howtobeawerewolf.com'))
         ) {
-            // 4
+            // 6
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody',
@@ -240,7 +242,7 @@
                 ttCss: 'background-color: white'
             };
         } else {
-            // 31
+            // 29
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody'
