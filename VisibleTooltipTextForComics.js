@@ -160,8 +160,9 @@
             || (compareDomain('saintsquarter.com'))
             || (compareDomain('xpboostcomic.com'))
             || (compareDomain('reallifecomics.com'))
+            || (compareDomain('saffroncomic.com'))
         ) {
-            // 18
+            // 19
             return {
                 comic: '#comic img',
                 body: '#comic'
@@ -172,12 +173,6 @@
                 comic: '#comic-image img',
                 body: '#comic-box'
             }
-        } else if (compareDomain('saffroncomic.com')) {
-            // 1
-            return {
-                comic: '#comic picture',
-                body: '#comic'
-            };
         } else if (compareDomain('sombulus.com')) {
             // 1
             return {
