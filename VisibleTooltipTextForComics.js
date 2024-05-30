@@ -41,6 +41,7 @@
 // @match        *://xpboostcomic.com/*
 // @match        *://johnnywander.com/*
 // @match        *://www.vaingloriouscomic.com/*
+// @match        *://www.lothcomic.com/*
 // @match        *://www.monster-pulse.com/*
 // @match        *://www.wychwoodcomic.com/*
 // @match        *://www.godslavecomic.com/*
@@ -161,8 +162,9 @@
             || (compareDomain('xpboostcomic.com'))
             || (compareDomain('reallifecomics.com'))
             || (compareDomain('saffroncomic.com'))
+            || (compareDomain('lothcomic.com'))
         ) {
-            // 19
+            // 20
             return {
                 comic: '#comic img',
                 body: '#comic'
