@@ -42,6 +42,7 @@
 // @match        *://johnnywander.com/*
 // @match        *://www.vaingloriouscomic.com/*
 // @match        *://www.lothcomic.com/*
+// @match        *://navcomic.com/*
 // @match        *://www.monster-pulse.com/*
 // @match        *://www.wychwoodcomic.com/*
 // @match        *://www.godslavecomic.com/*
@@ -237,6 +238,12 @@
                 comic: '#cc-comic',
                 body: '#cc-comicbody',
                 ttCss: 'background-color: white'
+            };
+        } else if (compareDomain('navcomic.com')) {
+            // 1
+            return {
+                comic: '.attachment-full',
+                body: '.webcomic-image'
             };
         } else {
             // 29
