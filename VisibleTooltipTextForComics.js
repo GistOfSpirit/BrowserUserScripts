@@ -43,6 +43,7 @@
 // @match        *://www.vaingloriouscomic.com/*
 // @match        *://www.lothcomic.com/*
 // @match        *://navcomic.com/*
+// @match        *://www.clockwork-comic.com/*
 // @match        *://www.monster-pulse.com/*
 // @match        *://www.wychwoodcomic.com/*
 // @match        *://www.godslavecomic.com/*
@@ -225,8 +226,9 @@
         } else if (
             compareDomain('monster-pulse.com')
             || compareDomain('vaingloriouscomic.com')
+            || compareDomain('clockwork-comic.com')
         ) {
-            // 2
+            // 3
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody',
