@@ -44,6 +44,8 @@
 // @match        *://www.lothcomic.com/*
 // @match        *://navcomic.com/*
 // @match        *://www.clockwork-comic.com/*
+// @match        *://spellxsword.com/*
+// @match        *://www.spellxsword.com/*
 // @match        *://www.monster-pulse.com/*
 // @match        *://www.wychwoodcomic.com/*
 // @match        *://www.godslavecomic.com/*
@@ -248,7 +250,7 @@
                 body: '.webcomic-image'
             };
         } else {
-            // 29
+            // 30
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody'
