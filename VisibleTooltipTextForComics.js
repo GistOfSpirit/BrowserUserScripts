@@ -145,7 +145,7 @@
         } else if (compareDomain('itneverrainscomic.com')) {
             // 1
             return {
-                comic: 'table div span img',
+                comic: 'table div img',
                 bodyFunc: (comic) => comic.parentNode.parentNode
             };
         } else if (
