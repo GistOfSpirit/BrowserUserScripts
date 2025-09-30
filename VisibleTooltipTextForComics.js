@@ -48,6 +48,7 @@
 // @match        *://www.spellxsword.com/*
 // @match        *://flakypastry.runningwithpencils.com/*
 // @match        *://www.flakypastry.runningwithpencils.com/*
+// @match        *://riverine.thecomicseries.com/*
 // @match        *://www.monster-pulse.com/*
 // @match        *://www.wychwoodcomic.com/*
 // @match        *://www.godslavecomic.com/*
@@ -258,6 +259,12 @@
                 bodyFunc: (comic) => comic.parentElement,
                 afterFunc: (comic) => comic
             };
+        } else if (compareDomain('riverine.thecomicseries.com')) {
+            // 1
+            return {
+                comic: '#comicimage',
+                body: '#comicimagewrap'
+            }
         } else {
             // 30
             return {
