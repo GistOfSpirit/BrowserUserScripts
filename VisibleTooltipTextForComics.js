@@ -134,8 +134,8 @@
         if (compareDomain('dumbingofage.com')) {
             // 1
             return {
-                comic: '#comic-1 img',
-                body: '#comic-1'
+                comic: '#spliced-comic img',
+                body: '#spliced-comic'
             };
         } else if (compareDomain('comicaurora.com')) {
             // 1
