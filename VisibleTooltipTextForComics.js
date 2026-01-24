@@ -49,6 +49,8 @@
 // @match        *://flakypastry.runningwithpencils.com/*
 // @match        *://www.flakypastry.runningwithpencils.com/*
 // @match        *://riverine.thecomicseries.com/*
+// @match        *://properfountaincare.the-comic.org/*
+// @match        *://www.properfountaincare.the-comic.org/*
 // @match        *://www.monster-pulse.com/*
 // @match        *://www.wychwoodcomic.com/*
 // @match        *://www.godslavecomic.com/*
@@ -264,6 +266,12 @@
             return {
                 comic: '#comicimage',
                 body: '#comicimagewrap'
+            }
+        } else if (compareDomain('properfountaincare.the-comic.org')) {
+            // 1
+            return {
+                comic: '.comicsegments img',
+                body: '.comicsegments'
             }
         } else {
             // 30
