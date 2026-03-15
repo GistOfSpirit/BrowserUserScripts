@@ -106,6 +106,8 @@
 // @match        *://nortverse.com/*
 // @match        *://reallifecomics.com/*
 // @match        *://www.reallifecomics.com/*
+// @match        *://matchmakercomic.com/*
+// @match        *://www.matchmakercomic.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -222,8 +224,9 @@
             || (compareDomain('theglassscientists.com'))
             || (compareDomain('namesakecomic.com'))
             || (compareDomain('howtobeawerewolf.com'))
+            || (compareDomain('matchmakercomic.com'))
         ) {
-            // 6
+            // 7
             return {
                 comic: '#cc-comic',
                 body: '#cc-comicbody',
