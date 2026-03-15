@@ -164,7 +164,6 @@
             || (compareDomain('niinaeveliina.com'))
             || (compareDomain('motherlovercomic.com'))
             || (compareDomain('heirsoftheveil.com'))
-            || (compareDomain('endcomic.com'))
             || (compareDomain('ninegatescomic.com'))
             || (compareDomain('megatokyo.com'))
             || (compareDomain('saintsquarter.com'))
@@ -173,11 +172,17 @@
             || (compareDomain('saffroncomic.com'))
             || (compareDomain('lothcomic.com'))
         ) {
-            // 20
+            // 19
             return {
                 comic: '#comic img',
                 body: '#comic'
             };
+        } else if (compareDomain('endcomic.com')) {
+            // 1
+            return {
+                comic: '#spliced-comic a',
+                body: '#spliced-comic'
+            }
         } else if (compareDomain('agirlandherfed.com')) {
             // 1
             return {
