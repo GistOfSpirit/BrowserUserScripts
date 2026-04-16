@@ -269,14 +269,11 @@
                 bodyFunc: (comic) => comic.parentElement,
                 afterFunc: (comic) => comic
             };
-        } else if (compareDomain('riverine.thecomicseries.com')) {
-            // 1
-            return {
-                comic: '#comicimage',
-                body: '#comicimagewrap'
-            }
-        } else if (compareDomain('properfountaincare.the-comic.org')) {
-            // 1
+        } else if (
+            (compareDomain('riverine.thecomicseries.com'))
+            || (compareDomain('properfountaincare.the-comic.org'))
+        ) {
+            // 2
             return {
                 comic: '.comicsegments img',
                 body: '.comicsegments'
