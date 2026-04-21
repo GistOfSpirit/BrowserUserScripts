@@ -235,8 +235,8 @@
         } else if(compareDomain('nortverse.com')) {
             // 1
             return {
-                comic: '#spliced-comic a',
-                body: '#spliced-comic a'
+                comic: '#spliced-comic div',
+                body: '#spliced-comic div'
             }
         } else if (
             compareDomain('monster-pulse.com')
