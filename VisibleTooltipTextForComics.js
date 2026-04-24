@@ -275,8 +275,8 @@
         ) {
             // 2
             return {
-                comic: '.comicsegments img',
-                body: '.comicsegments'
+                comic: '#comicimagewrap img, .comicsegments img',
+                body: '#comicimagewrap, .comicsegments'
             }
         } else {
             // 30
